@@ -1,1 +1,0 @@
-Cold Python Theme

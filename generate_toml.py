@@ -147,7 +147,8 @@ options = Options(
 )
 
 dependencies = [
-    "crimson-intelli-type==0.4.0"
+    "crimson-intelli-type==0.4.0",
+    "pyyaml"
 ]
 
 

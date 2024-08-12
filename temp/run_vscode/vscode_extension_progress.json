@@ -1,0 +1,12 @@
+[
+  {
+    "command": "runVscode.combinePackageJSON",
+    "status": "started",
+    "timestamp": 1723500812100
+  },
+  {
+    "command": "runVscode.combinePackageJSON",
+    "status": "completed",
+    "timestamp": 1723500812137
+  }
+]

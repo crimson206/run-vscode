@@ -36,5 +36,5 @@ dependencies = [
 requires-python = ">=3.9"
 
 [project.urls]
-"Homepage" = "https://github.com/crimson206/vscode-executor"
-"Bug Tracker" = "https://github.com/crimson206/vscode-executor/issues"
+"Homepage" = "https://github.com/crimson206/run-vscode"
+"Bug Tracker" = "https://github.com/crimson206/run-vscode/issues"
