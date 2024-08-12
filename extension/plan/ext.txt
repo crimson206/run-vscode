@@ -1,0 +1,40 @@
+// tasks.json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "echo",
+      "args": ["Hello from terminal!"],
+      "problemMatcher": [],
+      "label": "sayHello"
+    }
+  ]
+}
+
+// extension.ts
+import * as vscode from 'vscode';
+
+export function activate(context: vscode.ExtensionContext) {
+  let disposable = vscode.commands.registerCommand('extension.runTerminalCommand', async () => {
+    const task = await vscode.tasks.executeTask(
+      new vscode.Task(
+        { type: 'shell' },
+        vscode.TaskScope.Workspace,
+        'sayHello',
+        'echo',
+        new vscode.ShellExecution('echo "Hello from terminal!"')
+      )
+    );
+
+    vscode.tasks.onDidEndTaskProcess(e => {
+      if (e.execution === task) {
+        vscode.window.showInformationMessage('Terminal command completed!');
+      }
+    });
+  });
+
+  context.subscriptions.push(disposable);
+}
+
+export function deactivate() {}

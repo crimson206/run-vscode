@@ -1,3 +1,31 @@
+# vscode
+
+.vscode/**
+.vscode-test/**
+out/**
+node_modules
+src/**
+.gitignore
+.yarnrc
+webpack.config.js
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/.eslintrc.json
+**/*.ts
+.venv/**
+.nox/**
+.github/
+**/__pycache__/**
+**/.pyc
+bundled/libs/bin/**
+noxfile.py
+.pytest_cache/**
+.pylintrc
+**/requirements.txt
+**/requirements.in
+**/tool/_debug_server.py
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
