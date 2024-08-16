@@ -21,6 +21,6 @@
     "python.testing.unittestEnabled": false,
 
         // The path where the package.json files of extensions will be saved.
-    "runVscode.outputDir": "run-vscode-dev/development/temp/run_vscode" 
+    "runVscode.outputDir": "temp/run_vscode" 
 
 }
