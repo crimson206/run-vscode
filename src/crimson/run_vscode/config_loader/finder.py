@@ -22,3 +22,15 @@ def find_closest_dir(dir_name: str) -> Optional[str]:
             return potential_path
         current_dir = os.path.dirname(current_dir)
     return None
+
+
+def find_closest_vscode_settings() -> Optional[str]:
+    closest_vscode_folder = find_closest_dir(".vscode")
+    if closest_vscode_folder is None:
+        return None
+
+    settings_path = os.path.join(closest_vscode_folder, "settings.json")
+    if os.path.exists(settings_path):
+        return settings_path
+    else:
+        return None

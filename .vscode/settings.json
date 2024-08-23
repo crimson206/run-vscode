@@ -1,6 +1,5 @@
 {
     // Folderable .py
-
     "editor.foldingStrategy": "indentation",
     "editor.foldRegions": {
         "start": "^\\s*#\\s*region\\b",
@@ -21,6 +20,6 @@
     "python.testing.unittestEnabled": false,
 
         // The path where the package.json files of extensions will be saved.
-    "runVscode.outputDir": "temp/run_vscode" 
+    "runVscode.outputDir": "temp/run_vscode" // comment
 
 }
